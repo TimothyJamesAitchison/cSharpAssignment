@@ -23,7 +23,8 @@ namespace SokobanGame
             Game level = new Game(rowWidth, rowCount, playerPosX, playerPosY, levelDesign);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GameDrawingView(level));
+            // Application.Run(new GameDrawingView(level));
+            Application.Run(new GameView(level));
         }
     }
 }
